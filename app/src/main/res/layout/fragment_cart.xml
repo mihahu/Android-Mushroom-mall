@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="购物车"
+        android:textColor="#333333"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_checkout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <CheckBox
+            android:id="@+id/cb_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="总计: ¥ 0.00"
+            android:textColor="#F44336"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="#FF9800"
+            android:text="去结算"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cart_title"
+        android:layout_above="@id/bottom_checkout_layout"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"/>
+
+</RelativeLayout>
