@@ -71,7 +71,7 @@ Mushroommall/
 ### 安装步骤
 1. **克隆项目**
    ```bash
-   git clone https://github.com/yourusername/Mushroommall.git
+   git clone https://github.com/mihahu/Mushroommall.git
    ```
 
 2. **打开项目**
@@ -118,3 +118,4 @@ Mushroommall/
 
 
 感谢使用Mushroommall蘑菇商城应用！
+
